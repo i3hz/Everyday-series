@@ -2,6 +2,7 @@ import google.generativeai as genai
 from typing import List
 import os
 import json
+import sys
 from key import key
 class GeminiHashtagGenerator:
     def __init__(self, api_key: str):
@@ -132,7 +133,8 @@ async def main():
         content = input("\nEnter your social media post (or type 'exit' to quit): ")
         if content.lower() == 'exit':
             print("Goodbye!")
-            break
+            sys.exit(0)
+            
         
         suggested_categories = generator.get_category_suggestions(content)
         if suggested_categories:
