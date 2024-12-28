@@ -1,5 +1,5 @@
 
-```markdown
+
 # GeminiHashtagGenerator
 
 ## Project Description
